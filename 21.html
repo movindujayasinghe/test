@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Tech</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    //** Disable link dragging **// 
+    <script>
+        window.addEventListener('dragstart', function (e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+            }
+        });
+    </script>
+    
+
+    <script>
+        // Disable right-click context menu
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Disable F12 key
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "F12" || e.key === "Control") {
+                e.preventDefault();
+            }
+        });
+
+        const links = document.querySelectorAll('a');
+links.forEach(function (link) {
+    link.addEventListener('dragstart', function (e) {
+        e.preventDefault();
+    });
+});
+
+
+        
+    </script>
+
+    <center>
+    <div class="mydiv">
+        <h1>Sri Lanka</h1>
+        <p>Sri Lanka (UK: /sri ˈlæŋkə, ʃriː -/, US: /- ˈlɑːŋkə/ ; Sinhala: ශ්‍රී ලංකා, romanized: Śrī Laṅkā (IPA: [ʃriː laŋkaː]); Tamil: இலங்கை, romanized: Ilaṅkai (IPA: [ilaŋɡaj])), historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait. Sri Lanka shares a maritime border with the Maldives in the south-west and India in the north-west.</p>
+        <br>
+        <button><a href="https://en.wikipedia.org/wiki/Sri_Lanka">Click Here</a></button>
+        <br>
+        <img src="https://lh5.googleusercontent.com/p/AF1QipPyQm3w-x6-tfW_ZlVgz3A4xDZrthGMTBXaM10p=w540-h312-n-k-no" alt="Sigiriya">
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h1>Culture</h1>
+        <p>Sri Lanka has a population of approximately 22 million people and is home to many cultures, languages, and ethnicities. The Sinhalese people form the majority of the nation's population, followed by the Tamils, who are the largest minority group and are concentrated in northern Sri Lanka; both groups have played an influential role in the island's history. Other long-established groups include the Moors, Indian Tamils, Burghers, Malays, Chinese, and Vedda.</p>
+        <button><a href="https://www.srilanka.travel/">Click Here</a></button>
+        <br>
+        <img src="https://lh5.googleusercontent.com/p/AF1QipMLONJXXZNusfqfF0l9_-rMRuXkO0gvlwEVdbAZ=w540-h312-n-k-no" alt="FedupPeople">
+    </div>
+    <hr>
+    <div class="mydiv">
+        <h1>Place To Visit</h1>
+        <p>This is an island of magical proportions, once known as Serendib, Taprobane, the Pearl of the Indian Ocean, and Ceylon. Sri Lanka is famous for producing finest tea, rubber, and coconut, as well as exotic spices. Endless beaches, timeless ruins, welcoming people, oodles of elephants, rolling surf, cheap prices, fun trains, famous tea, and flavorful food make Sri Lanka.</p>
+        <button><a href="http://www.visitsrilanka.com/">Click Here</a></button> 
+        <br>
+        <img src="https://lp-cms-production.imgix.net/2023-10/GettyImages-1654880455.jpg" alt="" width="480" height="320">
+        <br>
+    </div>
+    <footer>
+        &copy; 2023 Mr.Tech | Sri Lanka
+    </footer>
+
+</center>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
